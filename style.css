@@ -1,0 +1,268 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif; /* More specific font stack */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    display: flex; /* For logo and title alignment */
+    align-items: center; /* Vertically align items */
+    justify-content: center; /* Horizontally center items */
+}
+
+header img#logo {
+    height: 50px; /* Adjust as needed */
+    margin-right: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem; /* Adjusted font size */
+}
+
+/* Navigation styling */
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem; /* Slightly larger font for nav links */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    padding: 1rem;
+    /* text-align: center; Centering might not be ideal for all sections */
+}
+
+main section {
+    background-color: #fff;
+    margin: 1rem auto; /* Keep centered */
+    padding: 1.5rem; /* Increased padding */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 900px; /* Max width for content */
+}
+
+main section h2 {
+    text-align: center; /* Center section titles */
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #007bff; /* Example primary color */
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 8px; /* Match other sections */
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff; /* Ensure headline is visible */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    background-color: #ffc107; /* Example accent color */
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e0a800;
+}
+
+/* Services Section */
+#services .service-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#services .service-item h3 {
+    margin-top: 0;
+    color: #0056b3; /* Darker blue for service titles */
+}
+
+/* Benefits Section */
+#benefits ul {
+    list-style-type: disc; /* Use disc for bullet points */
+    padding-left: 20px; /* Indent list */
+    text-align: left; /* Align text to left for readability */
+}
+
+#benefits ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Testimonials Section */
+#testimonials .testimonial {
+    background-color: #e9ecef; /* Light grey background for testimonials */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #007bff; /* Accent border */
+    border-radius: 5px;
+}
+
+#testimonials .testimonial p {
+    margin-top: 0;
+    font-style: italic;
+}
+
+#testimonials .testimonial footer {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #555;
+    background-color: transparent; /* Ensure footer within testimonial doesn't get main footer style */
+    padding: 0;
+    position: static; /* Override fixed position from main footer */
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0; /* Increased padding */
+    /* position: fixed; /* Or 'absolute' if you prefer */ /* Removing fixed position for now, can cause overlap */
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem; /* Add some space before footer */
+}
+
+footer p {
+    margin: 0.3rem 0; /* Space out footer text */
+}
+
+/* Responsive adjustments (basic example) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    header img#logo {
+        margin-bottom: 10px;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    padding: 1rem;
+    text-align: center;
+}
+
+main section {
+    background-color: #fff;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px; /* Max width for content */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed; /* Or 'absolute' if you prefer */
+    bottom: 0;
+    width: 100%;
+}
